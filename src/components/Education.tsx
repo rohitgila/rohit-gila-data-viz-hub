@@ -11,10 +11,10 @@ const Education = () => {
       location: "Phagwara, Punjab",
       duration: "Since 2022",
       grade: "CGPA: 6.97",
-      logo: "https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/0014/5308/brand.gif?itok=dF9GTRry"
+      logo: "/lovable-uploads/fc456bb1-67c3-4a03-b4ae-510f6af57e5e.png"
     },
     {
-      institution: "Vidya Shree Public School",
+      institution: "VSPS Vidya Shree Public School",
       degree: "Intermediate",
       field: "",
       location: "Didwana, Rajasthan",
@@ -23,7 +23,7 @@ const Education = () => {
       logo: "https://img.freepik.com/free-vector/flat-design-school-logo-template_23-2149668212.jpg"
     },
     {
-      institution: "Vivekanand Sr. Sec. School",
+      institution: "VPS Vivekanand Sr. Sec. School",
       degree: "Matriculation",
       field: "",
       location: "Didwana, Rajasthan",
