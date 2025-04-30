@@ -1,6 +1,7 @@
 
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 
 const Hero = () => {
   return (
@@ -53,13 +54,11 @@ const Hero = () => {
             </div>
           </div>
           <div className="md:w-1/2 flex justify-center md:justify-end animate-fade-in" style={{animationDelay: '0.4s'}}>
-            <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
-              <img 
-                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4MTMwMzYzMA&ixlib=rb-4.0.3&q=80&w=500" 
-                alt="Rohit Gila" 
-                className="w-full h-full object-cover"
-              />
-            </div>
+            <Avatar className="w-64 h-64 sm:w-80 sm:h-80 rounded-full border-4 border-white shadow-xl bg-gradient-to-br from-theme-blue to-theme-dark-blue">
+              <AvatarFallback className="text-6xl sm:text-8xl font-bold text-white">
+                RG
+              </AvatarFallback>
+            </Avatar>
           </div>
         </div>
       </div>
