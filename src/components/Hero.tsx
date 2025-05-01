@@ -1,7 +1,8 @@
 
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, FileText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -20,12 +21,14 @@ const Hero = () => {
               Currently pursuing B.Tech in Computer Science Engineering at Lovely Professional University.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button className="bg-theme-blue hover:bg-theme-dark-blue flex items-center gap-2">
-                View Resume <ArrowRight className="h-4 w-4" />
+              <Button className="bg-theme-blue hover:bg-theme-dark-blue flex items-center gap-2" asChild>
+                <Link to="/resume">
+                  <FileText className="h-4 w-4 mr-1" /> View Resume
+                </Link>
               </Button>
               <Button variant="outline" className="border-theme-blue text-theme-blue hover:bg-theme-light-blue">
                 <a href="#projects" className="flex items-center gap-2">
-                  See Projects
+                  See Projects <ArrowRight className="h-4 w-4" />
                 </a>
               </Button>
             </div>
